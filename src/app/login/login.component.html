@@ -1,0 +1,31 @@
+<!-- <app-employeedata></app-employeedata> -->
+<div id="all-item">
+  <div class="logo"></div>
+  <div class="login-block">
+    <h1>User Login</h1>
+    <form action="">
+      <input
+        type="text"
+        value=""
+        placeholder="Username"
+        id="username"
+        name="username"
+        [(ngModel)]="username"
+      />
+      <input
+        type="text"
+        value=""
+        placeholder="Password"
+        id="password"
+        name="password"
+        [(ngModel)]="userpassword"
+      />
+    </form>
+    <p>{{ errorMs }}</p>
+    <button (click)="login()">LogIn</button>
+    <div id="newuser">
+      <a href="/index.html"><p>Forgot Password</p></a>
+      <a href="/index.html"><p>signup</p></a>
+    </div>
+  </div>
+</div>
